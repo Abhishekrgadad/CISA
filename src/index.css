@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* Testimonials scroll animation */
+@keyframes scroll-testimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-testimonials {
+  animation: scroll-testimonials 40s linear infinite;
+}
+
+/* Testimonial Stack Animation */
+@keyframes testimonial-slide {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 10;
+  }
+  16.66% {
+    transform: translateX(-100%) scale(0.95);
+    opacity: 0;
+    z-index: 1;
+  }
+  83.33% {
+    transform: translateX(100%) scale(0.95);
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+.testimonial-stack .absolute:nth-child(1) {
+  animation: testimonial-slide 18s infinite;
+  animation-delay: 0s;
+}
+
+.testimonial-stack .absolute:nth-child(2) {
+  animation: testimonial-slide 18s infinite;
+  animation-delay: 3s;
+}
+
+.testimonial-stack .absolute:nth-child(3) {
+  animation: testimonial-slide 18s infinite;
+  animation-delay: 6s;
+}
+
+.testimonial-stack .absolute:nth-child(4) {
+  animation: testimonial-slide 18s infinite;
+  animation-delay: 9s;
+}
+
+.testimonial-stack .absolute:nth-child(5) {
+  animation: testimonial-slide 18s infinite;
+  animation-delay: 12s;
+}
+
+.testimonial-stack .absolute:nth-child(6) {
+  animation: testimonial-slide 18s infinite;
+  animation-delay: 15s;
+}
+
+/* Full Black and White Theme */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom gradient backgrounds for full black theme */
+.bg-dark-gradient {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+}
+
+.bg-hero-pattern {
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+/* Dark theme overrides for full black */
+.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Ensure proper font loading */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Light theme pure white */
+body:not(.dark) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
