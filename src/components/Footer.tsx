@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Shield, Linkedin, MessageCircle, Twitter } from 'lucide-react';
+import { Shield, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import { FaWhatsapp } from 'react-icons/fa';
+ 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
 
@@ -14,9 +15,9 @@ export const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/nielshoekman/', label: 'LinkedIn' },
-    { icon: MessageCircle, href: 'https://wa.me/1234567890', label: 'WhatsApp' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/cyberinformationsecurityagency/', label: 'LinkedIn' },
+    { icon: FaWhatsapp, href: 'https://wa.me/1234567890', label: 'WhatsApp' },
+    // { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
   ];
 
   return (

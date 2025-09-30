@@ -38,7 +38,7 @@ const resources = {
           description: 'Test your employees resilience against social engineering attacks with realistic phishing simulations.'
         },
         lp2: {
-          title: 'Lp2 Services',
+          title: 'Auditing & compliance',
           description: 'Specialized security services tailored to meet your unique organizational requirements and compliance needs.'
         },
         more: {

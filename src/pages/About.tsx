@@ -50,7 +50,16 @@ export const About: React.FC = () => {
               Founded by Expertise
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Founded by <strong>Niels Hoekman (Founder & CEO)</strong>, a cybersecurity professional with over a decade of experience, CISA B.V. was created with a vision to deliver security services with integrity, transparency, and measurable results.
+              Founded by{' '}
+              <a
+              href="https://www.linkedin.com/in/nielshoekman/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-blue-600 hover:underline"
+              >
+              Niels Hoekman (Founder &amp; CEO)
+              </a>
+              , a cybersecurity professional with over a decade of experience, CISA B.V. was created with a vision to deliver security services with integrity, transparency, and measurable results.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               Niels previously worked at leading companies including <strong>IBM, Check Point, Sysdig, and Palo Alto Networks</strong>, building expertise in firewalls, endpoint protection, cloud security, IoT, and OT environments.

@@ -53,8 +53,8 @@ export const Hero: React.FC = () => {
                     <div className="text-sm">Uptime</div>
                   </div>
                   <div className="bg-white/10 rounded-lg p-4">
-                    <div className="text-2xl font-bold">500+</div>
-                    <div className="text-sm">Clients</div>
+                    <div className="text-2xl font-bold">100+</div>
+                    <div className="text-sm">Systems Secured</div>
                   </div>
                   <div className="bg-white/10 rounded-lg p-4">
                     <div className="text-2xl font-bold">10+</div>

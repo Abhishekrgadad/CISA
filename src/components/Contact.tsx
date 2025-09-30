@@ -56,10 +56,27 @@ export const Contact: React.FC = () => {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [result, setResult] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', message: '' });
+    setResult("Sending...");
+    const formDataObj = new FormData(e.target as HTMLFormElement);
+    formDataObj.append("access_key", "4987e65e-fac8-4aae-aacf-fb3a7660319f");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formDataObj
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      setResult(data.message || "Submission failed.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -256,9 +273,11 @@ export const Contact: React.FC = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <span>{t('contact.form.submit')}</span>
+              
                 <Send className="w-5 h-5" />
               </motion.button>
             </form>
+              <span>{result}</span>
           </motion.div>
         </div>
       </div>
