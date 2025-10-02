@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      review: "CISA's security awareness training transformed our company culture. Our employees are now our strongest defense against cyber threats.",
+      review: "CISA's security awareness training transformed our company culture. Our employees are strongest defense against cyber threats.",
       name: "Sarah Johnson",
       company: "TechCorp Solutions",
       rating: 5
@@ -143,7 +143,7 @@ export const Contact: React.FC = () => {
               return (
                 <motion.div
                 key={testimonial.id}
-                className="absolute w-[28rem] h-72"
+                className="absolute w-[20rem] h-60 sm:w-[24rem] sm:h-64 md:w-[28rem] md:h-72"
                 style={{
                   zIndex: isActive ? 3 : isPrev ? 2 : 1,
                   pointerEvents: isActive ? 'auto' : 'none',
@@ -199,10 +199,18 @@ export const Contact: React.FC = () => {
                   </p>
                   </div>
                   <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
-                  <p className="font-semibold text-gray-900 dark:text-white">
+                  <p
+                    className="font-semibold text-gray-900 dark:text-white text-base sm:text-lg block max-w-full overflow-hidden text-ellipsis break-words whitespace-normal"
+                    style={{ wordBreak: 'break-word' }}
+                    title={testimonial.name}
+                  >
                     {testimonial.name}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  <p
+                    className="text-gray-600 dark:text-gray-400 text-sm block max-w-full overflow-hidden text-ellipsis break-words whitespace-normal"
+                    style={{ wordBreak: 'break-word' }}
+                    title={testimonial.company}
+                  >
                     {testimonial.company}
                   </p>
                   </div>
