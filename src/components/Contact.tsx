@@ -62,7 +62,7 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     setResult("Sending...");
     const formDataObj = new FormData(e.target as HTMLFormElement);
-    formDataObj.append("access_key", "4987e65e-fac8-4aae-aacf-fb3a7660319f");
+    formDataObj.append("access_key", "0e370709-e7bf-4845-99a1-bce9fd8748ce");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -72,7 +72,7 @@ export const Contact: React.FC = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Success! Thank you for contacting us.");
       setFormData({ name: '', email: '', message: '' });
     } else {
       setResult(data.message || "Submission failed.");
@@ -86,7 +86,7 @@ export const Contact: React.FC = () => {
     }));
   };
 
-  // Testimonial Card Flip Animation
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   React.useEffect(() => {

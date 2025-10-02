@@ -27,6 +27,12 @@ export const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 space-x-2"
+              onClick={() => {
+                const section = document.getElementById('contact');
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               <span>{t('hero.cta')}</span>
               <ArrowRight className="w-5 h-5" />

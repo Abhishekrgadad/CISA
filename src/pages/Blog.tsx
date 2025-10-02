@@ -8,7 +8,7 @@ export const Blog: React.FC = () => {
   const [activePost, setActivePost] = React.useState<number | null>(null);
 
   const blogPosts = [
-    {
+     {
       id: 1,
       title: 'It’s No Longer a Question of “If” – It’s “When” You’ll Be Hacked',
       excerpt: 'Cybersecurity threats are real, and no business—large or small—is completely safe.',
@@ -118,29 +118,203 @@ export const Blog: React.FC = () => {
         </>
       ),
       image: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Sarah Johnson',
+      author: ' Niels Hoekman',
       date: '2025-01-10',
       category: 'Security'
     },
     {
-      id: 6,
-      title: 'The Human Factor: Employee Training in Cybersecurity',
-      excerpt: 'Why employee education is crucial for cybersecurity and how to implement effective security awareness programs.',
+      id: 2,
+      title: "Cloud Security: Not Just for the Big Players – It's a Necessity for All",
+      excerpt: "Cloud security is a shared responsibility. Ignoring it is like leaving your house keys with a landlord and assuming burglars won’t notice.",
       description: (
         <>
           <p>
-            Employees are often the weakest link in cybersecurity. Comprehensive training programs can empower staff to recognize threats, follow best practices, and respond appropriately to incidents.
+            You’ve probably heard it before: “We’re on the cloud now, security isn’t our problem anymore.” Right. Sure. Except that thinking is exactly what puts companies at risk. Many businesses blindly trust cloud providers, imagining that their data is floating safely in some magical, impregnable vault. Reality check: it’s not. Cloud providers secure the infrastructure—but your data, applications, and configurations? That’s your responsibility.
           </p>
           <p>
-            Effective security awareness initiatives include regular workshops, simulated phishing exercises, and clear communication of policies.
+            <strong>Cloud security is a shared responsibility.</strong> Ignoring it is like leaving your house keys with a landlord and assuming burglars won’t notice.
           </p>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🌐 The Alarming State of Cloud Security</h3>
+          <p>
+            Cloud adoption is skyrocketing, but so are the risks. Consider these statistics:
+          </p>
+          <ul className="list-disc ml-6 mb-4">
+            <li>83% of organizations experienced at least one cloud security incident in 2024.</li>
+            <li>32% of cloud assets remain unmonitored, each carrying an average of 115 known vulnerabilities.</li>
+            <li>82% of data breaches in 2023 involved cloud-stored information.</li>
+          </ul>
+          <p>
+            These numbers make it clear: assuming the cloud keeps you safe without any effort is a dangerous gamble.
+          </p>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🏢 High-Profile Cloud Breaches You Should Know About</h3>
+          <ol className="list-decimal ml-6 mb-4">
+            <li>
+              <strong>Snowflake Data Breach (2024):</strong> Hackers exploited stolen credentials to access customer accounts on Snowflake, a leading cloud data platform. Companies affected included Ticketmaster, Santander, and AT&amp;T, resulting in significant data exposure.
+            </li>
+            <li>
+              <strong>Harrods Data Breach (2025):</strong> A third-party provider’s system was compromised, exposing customer names and contact details. While payment information wasn’t affected, the breach highlighted the risks associated with vendor and supply chain security.
+            </li>
+            <li>
+              <strong>Bank Transfer Records Exposure (2025):</strong> An unsecured cloud server exposed approximately 273,000 bank transfer records, including sensitive personal and financial information.
+            </li>
+          </ol>
+          <p>
+            These incidents prove that no organization is too small or too safe to be targeted. SMBs are often attractive targets because attackers assume their defenses are weaker—but the consequences can be just as severe.
+          </p>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🔐 Why Every Company Needs Cloud Security</h3>
+          <p>
+            Ignoring cloud security is like driving a car and assuming the brakes work without checking tire pressure, fuel levels, or whether the doors are locked. You’re relying on someone else’s infrastructure without taking responsibility for the parts that matter most.
+          </p>
+          <p>
+            <strong>Consequences of neglecting cloud security include:</strong>
+          </p>
+          <ul className="list-disc ml-6 mb-4">
+            <li><strong>Financial Loss:</strong> The average cost of a cloud data breach was $5.17 million in 2024.</li>
+            <li><strong>Reputational Damage:</strong> Customers may lose trust in your ability to protect their data.</li>
+            <li><strong>Operational Disruption:</strong> Misconfigurations or breaches can halt business operations, causing lost revenue.</li>
+          </ul>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🛡️ Practical Steps to Protect Your Cloud Environment</h3>
+          <ul className="list-disc ml-6 mb-4">
+            <li><strong>Understand Shared Responsibility:</strong> Know what the cloud provider secures and what falls under your responsibility.</li>
+            <li><strong>Implement Strong Access Controls:</strong> Use multi-factor authentication and restrict privileges to only those who need them.</li>
+            <li><strong>Monitor &amp; Audit Regularly:</strong> Continuously watch for unusual activity and misconfigurations.</li>
+            <li><strong>Encrypt Sensitive Data:</strong> Protect data in transit and at rest.</li>
+            <li><strong>Conduct Penetration Testing:</strong> Simulate attacks to identify weaknesses before real attackers do.</li>
+          </ul>
+          <p>
+            Even simple measures like these drastically reduce the risk of breaches.
+          </p>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">✅ Conclusion</h3>
+          <p>
+            Cloud computing offers incredible flexibility and efficiency—but it’s not a magic shield. Thinking “security is the provider’s job” is a recipe for disaster. Whether you’re a Fortune 500 company or a small business just starting, proactive cloud security is essential.
+          </p>
+          <p>
+            At CISA, we help organizations identify vulnerabilities, secure their cloud environments, and implement best practices to protect critical data. Don’t wait for a breach to realize the importance of cloud security—act now, stay protected, and keep your business safe.
+          </p>
+          <h4 className="mt-4 mb-2 font-semibold">SEO Keywords:</h4>
+          <ul className="list-disc ml-6 mb-4">
+            <li>cloud security</li>
+            <li>cloud breach</li>
+            <li>shared responsibility</li>
+            <li>cloud penetration testing</li>
+            <li>data protection</li>
+            <li>cloud best practices</li>
+          </ul>
         </>
       ),
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
-      author: 'Robert Kim',
-      date: '2024-12-28',
-      category: 'Training'
-    }
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: ' Niels Hoekman',
+      date: '2025-02-02',
+      category: 'Cloud Security'
+    },
+    {
+      id: 3,
+      title: "CFOs: Engage CISA – Know Your Organization’s Cybersecurity Posture Before It’s Too Late",
+      excerpt: "For CFOs, cybersecurity risk is financial risk. A single breach or ransomware attack can threaten cash flow, operations, reputation, and even the survival of the company.",
+      description: (
+        <>
+          <p>
+            As a CFO, your main responsibility is protecting the financial health of your organization. But in today’s digital world, <strong>cybersecurity risk is financial risk</strong>. A single breach or ransomware attack can threaten cash flow, operations, reputation, and even the survival of the company.
+          </p>
+          <p>
+            This isn’t just a concern for Fortune 500 companies—small and medium-sized businesses are increasingly targeted, and the consequences can be devastating.
+          </p>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🔍 Cybersecurity Is a Financial Risk – Not Just an IT Issue</h3>
+          <ul className="list-disc ml-6 mb-4">
+            <li>
+              The average cost of a data breach in 2024 was <strong>$5.17 million</strong>, including downtime, lost revenue, fines, and recovery.
+            </li>
+            <li>
+              Ransomware attacks often demand millions of dollars in ransom, which can cripple cash flow.
+            </li>
+            <li>
+              Operational disruption from an attack can halt business processes and impact the entire supply chain.
+            </li>
+          </ul>
+          <p>
+            For CFOs, these aren’t abstract figures—they represent potential financial exposure that could threaten shareholder value and investor confidence.
+          </p>
+          <h4 className="mt-4 mb-2 font-semibold">SEO Keywords:</h4>
+          <ul className="list-disc ml-6 mb-4">
+            <li>cost of data breach</li>
+            <li>ransomware financial impact</li>
+            <li>cyber risk for CFOs</li>
+          </ul>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🏢 High-Profile Cyberattacks with Financial Consequences</h3>
+          <ol className="list-decimal ml-6 mb-4">
+            <li>
+              <strong>Colonial Pipeline (2021):</strong> Ransomware shut down critical fuel infrastructure, leading to $4.4 million paid in ransom and severe operational disruption.
+            </li>
+            <li>
+              <strong>Harrods (2025):</strong> Cloud breach exposed customer data, resulting in significant remediation and reputational costs.
+            </li>
+            <li>
+              <strong>SMBs at Risk:</strong> Studies show that 60% of small and medium-sized businesses go out of business within six months after a cyberattack.
+            </li>
+          </ol>
+          <p>
+            These cases prove that cybersecurity risk affects all companies, not just large enterprises.
+          </p>
+          <h4 className="mt-4 mb-2 font-semibold">SEO Keywords:</h4>
+          <ul className="list-disc ml-6 mb-4">
+            <li>real-world cyberattacks</li>
+            <li>SMB cybersecurity</li>
+            <li>ransomware case study</li>
+          </ul>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">🛡️ How CISA Helps CFOs Manage Cyber Financial Risk</h3>
+          <p>
+            At CISA, we provide actionable insight into your organization’s security posture, helping CFOs:
+          </p>
+          <ul className="list-disc ml-6 mb-4">
+            <li>Identify vulnerabilities through comprehensive penetration testing.</li>
+            <li>Understand financial exposure linked to cyber risks.</li>
+            <li>Prioritize investments to strengthen cybersecurity efficiently.</li>
+            <li>Ensure compliance with regulatory and industry standards.</li>
+          </ul>
+          <p>
+            Cybersecurity isn’t about technology alone—it’s about protecting your organization’s finances and continuity.
+          </p>
+          <h4 className="mt-4 mb-2 font-semibold">SEO Keywords:</h4>
+          <ul className="list-disc ml-6 mb-4">
+            <li>penetration testing for CFOs</li>
+            <li>cybersecurity investment</li>
+            <li>risk management</li>
+            <li>compliance cybersecurity</li>
+          </ul>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">💡 Key Takeaways for CFOs</h3>
+          <ul className="list-disc ml-6 mb-4">
+            <li><strong>Cybersecurity = Financial Risk</strong> – Treat cyber threats like any other business risk.</li>
+            <li><strong>Prevention Saves Money</strong> – Investing in cybersecurity upfront is cheaper than recovering from a breach.</li>
+            <li><strong>Visibility is Critical</strong> – You can’t manage what you don’t know is vulnerable.</li>
+            <li><strong>Engage CISA</strong> – Gain clarity on your organization’s security posture and make informed financial decisions.</li>
+          </ul>
+          <h4 className="mt-4 mb-2 font-semibold">SEO Keywords:</h4>
+          <ul className="list-disc ml-6 mb-4">
+            <li>cybersecurity awareness for CFOs</li>
+            <li>proactive cybersecurity strategy</li>
+            <li>business financial protection</li>
+          </ul>
+          <h3 className="mt-6 mb-2 font-semibold text-lg">✅ Conclusion</h3>
+          <p>
+            A cyber breach or ransomware attack is not hypothetical—it’s a real, growing threat. CFOs have a responsibility to understand the financial impact of cybersecurity risks. Engaging CISA ensures you know where your organization stands, allowing you to make informed decisions that protect revenue, reputation, and long-term survival.
+          </p>
+          <p>
+            In cybersecurity, being proactive isn’t optional—it can be the difference between staying in business and going bankrupt.
+          </p>
+          <h4 className="mt-4 mb-2 font-semibold">SEO Keywords:</h4>
+          <ul className="list-disc ml-6 mb-4">
+            <li>CFO cybersecurity responsibility</li>
+            <li>ransomware prevention</li>
+            <li>cyber risk mitigation</li>
+            <li>cloud security financial impact</li>
+          </ul>
+        </>
+      ),
+      image: 'https://images.pexels.com/photos/4968633/pexels-photo-4968633.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: ' Niels Hoekman',
+      date: '2025-03-15',
+      category: 'Finance & Security'
+    },
   ];
   const popupRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
@@ -249,9 +423,9 @@ export const Blog: React.FC = () => {
                   <div className="md:w-1/2 w-full p-8 flex flex-col items-center border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800">
                     <img src={post.image} alt={post.title} className="w-full h-56 object-cover rounded-xl mb-6" />
                     <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3">
-                      <Calendar className="w-4 h-4 mr-2" />
-                      <span>{new Date(post.date).toLocaleDateString()}</span>
-                      <span className="mx-2">•</span>
+                      {/* <Calendar className="w-4 h-4 mr-2" /> */}
+                      {/* <span>{new Date(post.date).toLocaleDateString()}</span> */}
+                      {/* <span className="mx-2">•</span> */}
                       <User className="w-4 h-4 mr-2" />
                       <span>{post.author}</span>
                     </div>
@@ -263,9 +437,10 @@ export const Blog: React.FC = () => {
                   </div>
                   {/* Right: Description */}
                   <div className="md:w-1/2 w-full p-8 flex flex-col">
-                   <div className="flex-1 overflow-y-auto max-h-[32rem] pr-2"></div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4"></h3>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{post.description}</p>
+                    <div className="flex-1 overflow-y-auto max-h-[32rem] pr-2">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4"></h3>
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{post.description}</p>
+                    </div>
                   </div>
                 </>
               );
