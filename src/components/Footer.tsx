@@ -32,7 +32,11 @@ export const Footer: React.FC = () => {
           >
             <div className="flex items-center space-x-2 mb-6">
               <Shield className="w-8 h-8 text-blue-400" />
-              <span className="text-xl font-bold">CISA</span>
+                <img
+                src="/logo.png"
+                alt="CISA Logo"
+                className="h-8 w-auto"
+                />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               {t('hero.subtitle')}
