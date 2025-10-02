@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://www.linkedin.com/company/cyberinformationsecurityagency/', label: 'LinkedIn' },
-    { icon: FaWhatsapp, href: 'https://wa.me/1234567890', label: 'WhatsApp' },
+    { icon: FaWhatsapp, href: 'https://wa.me/+31615480093', label: 'WhatsApp' },
     // { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
   ];
 

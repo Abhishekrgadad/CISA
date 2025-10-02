@@ -33,20 +33,22 @@ export const Header: React.FC = () => {
     <header className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
             <Shield className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">
-              CISA
-            </span>
-          </Link>
+            <img
+              src="/logo.png"
+              alt="CISA Logo"
+              className="h-8 w-auto"
+            />
+            </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a 
+            <a
               href="/"
               onClick={() => handleNavClick("/")}
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-              >
+            >
               {t("nav.home")}
             </a>
             <a
