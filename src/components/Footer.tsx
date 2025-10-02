@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center space-x-2 mb-6">
-              <Shield className="w-8 h-8 text-blue-400" />
+              {/* <Shield className="w-8 h-8 text-blue-400" /> */}
                 <img
                 src="/logo.png"
                 alt="CISA Logo"

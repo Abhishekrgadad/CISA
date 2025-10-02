@@ -34,12 +34,12 @@ export const Header: React.FC = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
-            <Shield className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-            <img
-              src="/logo.png"
-              alt="CISA Logo"
-              className="h-8 w-auto"
-            />
+              {/* <Shield className="w-8 h-8 text-blue-600 dark:text-blue-400" /> */}
+              <img
+                src="/logo.png"
+                alt="CISA Logo"
+                className="h-8 w-auto"
+              />
             </Link>
 
           {/* Desktop Navigation */}
